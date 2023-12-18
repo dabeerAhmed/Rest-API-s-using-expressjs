@@ -22,7 +22,7 @@ exports.createProduct = (req, res) => {
 
 // Read GET products
 exports.getAllProducts = async (req, res) => {
-  const products = await Product.find({ price: { $gt: 500 } });
+  const products = await Product.find({});
   res.json(products);
 };
 
